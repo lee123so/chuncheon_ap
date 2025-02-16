@@ -2,7 +2,7 @@
 A simple markdown editor.
 -->
 
-<script setup>
+<script setup lang="ts">
 import { marked } from 'marked'
 import { debounce } from 'lodash-es'
 import { ref, computed } from 'vue'
@@ -11,7 +11,7 @@ const input = ref('# hello')
 
 const output = computed(() => marked(input.value))
 
-const update = debounce((e) => {
+const update = debounce((e: { target: { value: string } }) => {
   input.value = e.target.value
 }, 100)
 </script>
