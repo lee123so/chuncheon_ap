@@ -11,8 +11,11 @@ const input = ref('# hello')
 
 const output = computed(() => marked(input.value))
 
-const update = debounce((e: { target: { value: string } }) => {
-  input.value = e.target.value
+const update = debounce((e: Event) => {
+  const target = e.target as HTMLTextAreaElement;
+  if (target) {
+    input.value = target.value;
+  }
 }, 100)
 </script>
 
