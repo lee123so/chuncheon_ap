@@ -2,7 +2,7 @@
   "name": "vue-project",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://lee123so.github.io/",
+
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,9 +10,11 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build"
+    "type-check": "vue-tsc --build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "marked": "^15.0.7",
@@ -36,5 +38,6 @@
     "vitest": "^3.0.5",
     "vue-tsc": "^2.2.0"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "homepage": "https://lee123so.github.io/"
 }
