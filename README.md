@@ -1,53 +1,39 @@
-# Next.js & HeroUI Template
+# vue-project
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+This template should help get you started developing with Vue 3 in Vite.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+## Recommended IDE Setup
 
-## Technologies Used
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## Type Support for `.vue` Imports in TS
 
-## How to Use
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-### Use the template with create-next-app
+## Customize configuration
 
-To create a new project based on this template using `create-next-app`, run the following command:
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
+## Project Setup
+
+```sh
+yarn
 ```
 
-### Install dependencies
+### Compile and Hot-Reload for Development
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
-```bash
-npm install
+```sh
+yarn dev
 ```
 
-### Run the development server
+### Type-Check, Compile and Minify for Production
 
-```bash
-npm run dev
+```sh
+yarn build
 ```
 
-### Setup pnpm (optional)
+### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@heroui/*
+```sh
+yarn test:unit
 ```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
